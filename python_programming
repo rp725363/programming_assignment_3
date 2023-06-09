@@ -1,0 +1,86 @@
+Write a Python Program to Check if a Number is Positive, Negative or Zero?
+Ans:-
+Here is a Python program that checks if a number is positive, negative, or zero
+def check_number(number):
+    if number > 0:
+        print("This number is positive")
+    elif number < 0:
+        print("This number is negative")
+    else:
+        print("This is zero")
+        
+num=int(input("enter your number"))
+result=check_number(num)
+
+We have written above code for named check_number to check the given number if the number is negative , positive of zero
+firsst we compare the given number to zero with if elase condition and and then we call the same function with variable to get number from input user .
+
+Write a Python Program to Check if a Number is Odd or Even?
+Ans:-
+Here's a Python program that checks if a number is odd or even
+def check_odd_number(number):
+    if number % 2 == 0:
+        print("this is a even number")
+    else:
+        print("this is odd number")
+    
+
+num=int(input("your number is :"))
+
+result=check_odd_number(num)
+
+here we have written code for as wrote a function for checking the number for odd or even using if else condition, then we called the same function with the calling variables.
+
+
+Write a Python Program to Check Leap Year?
+Ans:-
+Here we have written below function for checking weather year is leap or not :-
+def check_leap_year(year):
+    if year % 4 ==0 and (year % 100 != 0 or year % 400 ==0):
+        print(f"{year} is a leap year")
+    else:
+        print(f"{year} is not leap year")
+        
+yrs=int(input("enter your year"))
+
+result=check_leap_year(yrs)
+
+
+Write a Python Program to Check Prime Number?
+Ans:-
+here we have written code to check weather number is prime or not.
+def cehck_prime_number(number):
+    if number <= 1:
+        print(f"{number} this is not prime number")
+    for i in range(2,int(number**0.5)+1):
+        if number % i ==0:
+            print(f"{number} this is not prime number")
+            return
+    print(f"{number} is prime number")
+        
+num=int(input("your given number"))
+
+result=cehck_prime_number(num)
+
+
+Write a Python Program to Print all Prime Numbers in an Interval of 1-10000?
+Ans:-
+here we have written function for print the prime numbers between 1 to 10000
+def write_prime_numbers(start,end):
+    prime_numbers=[]
+    for number in range(start,end+1):
+        if number > 1:
+            for i in range(2,int(number**0.5)+1):
+                if number % i == 0:
+                    break
+                else:
+                    prime_numbers.append(number)
+    print("prime numbers in interval of 1-10000")
+    for prime in prime_numbers:
+        print(prime)
+        
+start=1
+end=10000
+
+write_prime_numbers(start,end)
+
